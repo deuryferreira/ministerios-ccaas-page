@@ -300,6 +300,7 @@ body {
   font-weight: bold;
 }
 
+/* Contenedor de Horarios de Servicios */
 #horarios-container {
   max-width: 500px;
   margin: auto;
