@@ -302,6 +302,7 @@ body {
 
 #horarios-container {
   max-width: 500px;
+  margin: auto;
 }
 
 /*Card Hover*/
