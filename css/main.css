@@ -300,6 +300,10 @@ body {
   font-weight: bold;
 }
 
+#horarios-container {
+  max-width: 500px;
+}
+
 /*Card Hover*/
 .df-card-1:hover :not(.df-card-button, p) {
   border-color: var(--fourth-color);
