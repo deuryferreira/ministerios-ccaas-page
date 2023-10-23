@@ -1,0 +1,338 @@
+/* Google Fonts ------------- */
+/* Montserrat */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap");
+
+:root {
+  --primady-dark-color: #011d38;
+  --primary-color: #002244;
+  --second-color: #e28000;
+  --third-color: #0c4885;
+  --fourth-color: #1f7edd;
+  --gradient-1: linear-gradient(
+    15deg,
+    rgba(1, 29, 56, 1) 0%,
+    rgba(0, 44, 88, 1) 50%
+  );
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body Generals */
+body {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+}
+
+#logo-ccaas {
+  width: 20vw;
+  max-width: 120px;
+}
+
+/* navbar */
+#df-navbar {
+  max-width: 1200px;
+}
+
+#df-nav-title {
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+/* Backgrounds for sections */
+
+.bg-df-gradient-1 {
+  background: var(--gradient-1);
+}
+
+.bg-df-primary-dark {
+  background-color: var(--primary-color);
+}
+
+.bg-df-fourth-color {
+  background-color: var(--fourth-color);
+}
+
+.bg-df-third-color {
+  background-color: var(--third-color);
+}
+
+/* Colors */
+
+.c-df-primary {
+  color: var(--primary-color);
+}
+
+.c-df-second {
+  color: var(--second-color);
+}
+
+.c-df-third {
+  color: var(--third-color);
+}
+
+.c-df-fourth {
+  color: var(--fourth-color);
+}
+
+/* Fonts specifications */
+.df-bolder {
+  font-weight: 900;
+}
+
+.df-font-xs {
+  font-size: 0.9rem;
+  line-height: 1.2em;
+}
+
+.df-font-m {
+  font-size: 2rem;
+  line-height: 1em;
+}
+
+.df-font-l {
+  font-size: 2.4rem;
+  line-height: 1em;
+}
+
+.df-font-xl {
+  font-size: 3.2rem;
+  line-height: 1em;
+}
+
+.df-font-xxl {
+  font-size: 4rem;
+  line-height: 1em;
+}
+
+#contacto img {
+  max-width: 25vw;
+  max-width: 180px;
+}
+
+/* Botones */
+
+/* BTN-1 */
+.df-btn-1 {
+  align-items: center;
+  appearance: none;
+  background-color: var(--third-color);
+  background-image: linear-gradient(
+    1deg,
+    var(--primary-color),
+    var(--third-color) 99%
+  );
+  background-size: calc(100% + 20px) calc(100% + 20px);
+  border-radius: 100px;
+  border-width: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  height: auto;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 8px 22px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s, background-position 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+  font-size: 1.5rem;
+}
+
+.df-btn-1:active,
+.df-btn-1:focus {
+  outline: none;
+}
+
+.df-btn-1:hover {
+  background-position: -20px -20px;
+}
+
+.df-btn-1:focus:not(:active) {
+  box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 0.125em;
+}
+
+/* BTN-2 */
+.df-btn-2:link,
+.df-btn-2:visited {
+  font-weight: 600;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--primary-color);
+  padding: 10px 30px;
+  border: 1px solid;
+  border-radius: 1000px;
+  display: inline-block;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.df-btn-2:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(27, 27, 27, 0.5);
+}
+
+.df-btn-2:active {
+  transform: translateY(-3px);
+}
+
+.df-btn-2::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s;
+}
+
+.df-btn-2:hover::after {
+  background-color: var(--fourth-color);
+  transform: scaleX(1.4) scaleY(1.5);
+  opacity: 0;
+}
+
+/* BTN-3 */
+.df-btn-3:link,
+.df-btn-3 {
+  background-color: #fcfcfc;
+  border: 1px solid var(--primary-color);
+  color: var(--third-color);
+  padding: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 1000px;
+  transition: all 0.2s;
+}
+
+.df-btn-3:hover {
+  background-color: var(--primary-color);
+
+  color: #fcfcfc;
+}
+
+#btn-siembra {
+  margin-right: 3rem;
+}
+
+/* Custom Card **************************/
+
+.df-card-1 {
+  max-width: 80%;
+  background: #fcfcfc;
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid #c3c6ce;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+  overflow: visible;
+}
+
+.df-card-details {
+  color: var(--fourth-color);
+  height: 100%;
+  gap: 0.5em;
+  display: grid;
+  place-content: center;
+}
+
+.df-card-button {
+  padding: 1rem;
+  min-width: 75%;
+  /* --- */
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  align-items: center;
+  -webkit-transform: translate(-50%, 125%);
+  -ms-transform: translate(-50%, 125%);
+  transform: translate(-50%, 125%);
+  width: 50%;
+  padding: 2rem;
+  border-radius: 1.2rem;
+  border: none;
+  background-color: var(--second-color);
+  color: #fcfcfc;
+  font-size: medium;
+  font-weight: 600;
+  vertical-align: middle;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+  /* Added Shadow */
+  box-shadow: 1px 14px 62px 8px rgba(160, 118, 39, 0.61);
+  -webkit-box-shadow: 1px 14px 62px 8px rgba(160, 118, 39, 0.61);
+  -moz-box-shadow: 1px 14px 62px 8px rgba(160, 118, 39, 0.61);
+}
+
+.df-card-button > p {
+  font-size: 100%;
+  text-align: center;
+  align-self: center;
+  margin: 0;
+}
+
+.df-card-text-body {
+  color: var(--second-color);
+}
+
+/*Card Text*/
+.df-card-text-title {
+  color: var(--fourth-color);
+  font-weight: bold;
+}
+
+/*Card Hover*/
+.df-card-1:hover :not(.df-card-button, p) {
+  border-color: var(--fourth-color);
+  filter: blur(7px);
+
+  backdrop-filter: blur(7px);
+}
+
+.df-card-1:hover {
+  cursor: pointer;
+}
+
+.df-card-1:hover .df-card-button {
+  -webkit-transform: translate(-50%, -75%);
+  -ms-transform: translate(-50%, -75%);
+  transform: translate(-50%, -75%);
+  opacity: 1;
+}
+
+/* BOTON DE PERSISTENTE PARA WS O GO UP */
+#go-up-button {
+  display: none; /* Inicialmente oculto */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: transparent;
+  color: #fff;
+  padding: auto;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* #go-up-button:hover {
+  background-color: #0056b3;
+} */
